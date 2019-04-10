@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Automated followUp Service </title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head> 
+  <body>
+
+    <nav class="navbar navbar-default coil">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Automated followUp Service</a>
+        </div>
+      </div>
+    </nav>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <h1> <span class="glyphicon glyphicon-user" aria-hidden="true"></span>Manage Your Members</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+    <section id="main">
+        <div class="row">
+          <div class="col-md-6">
+              <div class="panel-heading coile nav">
+                <h3 class="panel-title">Message <span class="dropdown create">
+                  <button class="btn btn-primary dropdown-toggle " type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Add Message
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a type="button" data-toggle="modal" data-target="#addmessage">Text</a></li>
+                    
+                    <li><a type="button" data-toggle="modal" data-target="#addmessage">Email</a></li>
+                    
+                  </ul>
+              </div>
+              <div class="panel-body">
+                  <table id="firstTable" class="table table-striped table-hover" >
+                       <tr>
+                        <th>Text</th>
+                        <th>Email</th>
+                        <th>Date</th>
+                       </tr>
+                     <!-- <tbody> -->
+                       <tr>
+                         <td>hello we would like to welcome you to our organization</td>
+                         <td>2019-03-10</td>
+                       </tr>
+                  </table>
+           </div>
+          
+           
+            
+          </div>
+           <div class="col-md-6">
+              <div class="panel panel-secondary">
+                  <div class="panel-heading coile">
+                    <h3 class="panel-title">Members Contact <span class="dropdown create">
+                      <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Add A New Member
+                        <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a type="button" data-toggle="modal" data-target="#addusers">Add a new member</a></li>
+                        
+                      </ul>
+                    </span></h3>
+                  </div>
+                  <div class="panel-body panel-primary">
+                   <table id="myTable" class="table table-striped table-hover" >
+                        <tr>
+                         <th>Name</th>
+                         <th>Email</th>
+                         <th>Phone Number</th>
+                         <th>Joined</th>
+                        </tr>
+                      <!-- <tbody> -->
+                        <tr>
+                          <td>Samuel John</td>
+                          <td>samuelpaul@gmail.com</td>
+                          <td>0809997777</td>
+                          <td>2019-03-10</td>
+                        </tr>
+                      <!-- </tbody>
+                      <tbody> -->
+                        <tr>
+                          <td>Samuel John</td>
+                          <td>samuelpaul@gmail.com</td>
+                          <td>0809997777</td>
+                          <td>2019-03-10</td>  
+                        </tr>
+                      <!-- </tbody>
+                      <tbody> -->
+                        <tr>
+                    
+                            
+                        </tr>
+                      <!-- </tbody>
+                      <tbody> -->
+                        <tr>
+                            
+                        </tr
+
+                      
+                       </table>
+                    </div>
+                  </div>
+          </div>
+
+      </div>
+    </section>
+    <footer id="footer">
+        <!-- <p>copyright Code360 , &copy; 2019</p> -->
+    </footer>
+    <!--modal -->
+    <!--adduser modal-->
+    <div class="modal fade" id="addusers" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <form id="addform" >
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Add New Member</h4>
+            </div>
+            <div class="modal-body">
+                 
+              <div class="form-group">
+                  <label>Full Name</label>
+                  <input type="text" class="form-control" id="fullName" placeholder="Add fullname">               
+                </div> 
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="text" class="form-control" id="phone" placeholder="Add phone number">               
+                  </div> 
+                
+                <div class="form-group">
+                  <label>Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Add email">               
+                </div>
+                <div class="form-group">
+                    <label>Date</label>
+                    <input type="date" class="form-control" id="date" placeholder="Add date">               
+                </div>      
+            </div>
+            <div class="modal-footer">
+                <button onclick="contact.memberList()" class="btn btn-primary" data-dismiss="modal">Save</button>
+              <button class="btn btn-danger" data-dismiss="modal">Close</button>
+              
+            </div>
+          </form>            
+          </div>
+        </div>
+      </div>
+      
+
+
+    
+     
+      <!-- ADD RECORDED CALL -->
+
+      <!-- text and email add -->
+      <div class="modal fade" id="addmessage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <form id="addform" >
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Message Add Page</h4>
+              </div>
+              <div class="modal-body">
+                   
+                <div class="form-group">
+                    <label>TEXT MESSAGE</label>
+                    <textarea class="form-control" id="newMessage" placeholder="write message..."></textarea>              
+                  </div> 
+                  
+                  <div class="form-group">
+                    <label>EMAIL</label>
+                    <textarea class="form-control" id="newEmail" placeholder="write email..."></textarea>                
+                  </div>
+                  <div class="form-group">
+                      <label>Date</label>
+                      <input type="date" class="form-control" id="newDate">               
+                  </div>      
+              </div>
+              <div class="modal-footer">
+                  <button onclick="message.addMessage()"  class="btn btn-primary" data-dismiss="modal">Save</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                
+              </div>
+            </form>            
+            </div>
+          </div>
+        </div>
+
+      <!-- <script>
+          CKEDITOR.replace( 'editor1' );
+  </script> -->
+
+      
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+  </body>
+
+  
+</html>
